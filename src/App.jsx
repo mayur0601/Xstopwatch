@@ -24,4 +24,6 @@ function App() {
           let second = timer%60; 
           return `${minute}:${second<10 ? "0" : ""}${second}`; 
         }
-  return ( <div className="App"> <h2>Stop watch</h2> <p>Time : {formattedTimer(timer)}</p> {!isRuning && <button onClick={startStopWatch}>Start</button>} {isRuning && <button onClick={endStopWatch}>Stop</button>} <button onClick={resetStopWatch}>Reset</button> </div> ); } export default App;
+  return ( <div className="App"> <h2>Stopwatch</h2>
+    <p>Time: {formattedTimer(timer)}</p> 
+    {!isRuning && <button onClick={startStopWatch}>Start</button>} {isRuning && <button onClick={endStopWatch}>Stop</button>} <button onClick={resetStopWatch}>Reset</button> </div> ); } export default App;
